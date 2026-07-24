@@ -1,24 +1,21 @@
-import heroImg from './assets/hero.webp'
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import SiteNav from './components/SiteNav'
+import HomePage from './pages/HomePage'
 import './App.css'
 
 function App() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <>
-      <section id="hero">
-        <div className="hero">
-          <img src={heroImg} className="base" alt="" />
-        </div>
-        <div className="profile">
-          <span className="eyebrow">Developer Portfolio</span>
-          <h1>Renie Joshi</h1>
-          <p className="tagline">
-            I’m currently learning robotics programming in Java with Bear Metal
-            2046 and leading internal web dev projects. This portfolio documents
-            projects I've coded and collaborated on — from FRC robots to team
-            website redesigns.
-          </p>
-        </div>
-      </section>
+      <SiteNav />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   )
 }
