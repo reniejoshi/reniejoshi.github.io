@@ -1,3 +1,5 @@
+import Footer from '../components/Footer'
+
 import arduinoCarImg from '../assets/projects/arduino-car.png'
 import bearchivesImg from '../assets/projects/bearchives.png'
 import bearMetalDocsImg from '../assets/projects/bear-metal-docs.png'
@@ -345,6 +347,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }
