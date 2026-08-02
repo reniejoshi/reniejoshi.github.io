@@ -35,20 +35,72 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="timeline-section-wrapper section-block">
-        <div className="timeline-header">
-          <div className="timeline-heading-block">
-            <h2 className="timeline-main-title">
-              <span className="title-accent-bar" />
-              PROJECTS
-            </h2>
-            <p className="timeline-subtitle">
-              My coding journey, year by year.
-            </p>
-          </div>
+      <section className="section experience-section">
+        <div className="header">
+          <h2 className="title">
+            <span className="title-accent-bar" />
+            EXPERIENCE
+          </h2>
+          <p className="subtitle">Work and activities I've been involved in.</p>
         </div>
 
-        <div className="timeline-container">
+        <div className="experience-container container">
+          <div className="experience-card">
+            <h3>FIRST Robotics Competition — Team 2046 Bear Metal</h3>
+            <p className="experience-role">
+              Programming Lead · Backup Drive Coach
+            </p>
+            <p className="experience-meta">
+              September 2025 - Present · Maple Valley, WA
+            </p>
+            <ul className="experience-list">
+              <li>
+                Participated in a 4-year robotics program that inspired pursuit
+                of engineering as a career.
+              </li>
+              <li>
+                Progressed from a technical robot programming role to project
+                management and team leadership.
+              </li>
+              <li>
+                Led internal web development projects for a team website and
+                documentation for sustainability.
+              </li>
+              <li>
+                Won 4 competitions including a worlds divisional win and
+                competed on the Einstein field in 2026.
+              </li>
+            </ul>
+          </div>
+
+          <div className="experience-card">
+            <h3>Bear Metal Summer Camps</h3>
+            <p className="experience-role">Volunteer · Camp Counselor</p>
+            <p className="experience-meta">July 2026</p>
+            <ul className="experience-list">
+              <li>
+                Volunteered for middle school and elementry VEX robotics summer
+                camps.
+              </li>
+              <li>
+                Gained job experience as a camp counselor at Game Maker's Coding
+                Camp.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="header">
+          <h2 className="title">
+            <span className="title-accent-bar" />
+            PROJECTS
+          </h2>
+          <p className="subtitle">My coding journey, year by year.</p>
+        </div>
+
+        <div className="container">
           <div className="timeline-vertical-line" />
 
           <div className="timeline-row">
